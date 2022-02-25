@@ -1,10 +1,18 @@
 import {
-  Ethereum_Query,
-  Ethereum_Connection,
-  Input_tryUriResolver,
-  UriResolver_TryUriResolverResult
+  UriResolver_MaybeUriOrManifest,
+  Input_tryResolveUri,
+  Input_getFile
 } from "./w3";
 
-export function tryUriResolver(input: Input_tryUriResolver): UriResolver_TryUriResolverResult {
+export function tryResolveUri(input: Input_tryResolveUri): UriResolver_MaybeUriOrManifest {
   //Do something here
+  return {
+    uri: null,
+    manifest: null
+  };
+}
+
+export function getFile(input: Input_getFile): ArrayBuffer | null {
+  // Do Something
+  return null;
 }
