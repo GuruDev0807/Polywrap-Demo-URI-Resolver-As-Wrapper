@@ -1,4 +1,4 @@
-#import { Query, Connection } into Ethereum from "w3://ens/ethereum.web3api.eth"
+#import { Query } into UriResolver from "ens/uri-resolver.core.web3api.eth"
 
 type Query implements UriResolver_Query {
 
